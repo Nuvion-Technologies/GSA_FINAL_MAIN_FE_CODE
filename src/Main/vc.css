@@ -1,0 +1,228 @@
+/* Container */
+.container {
+    max-width: 1500px;
+    padding: 0rem 1rem;
+    margin: 0 auto;
+}
+
+/* Swiper main container */
+.swiper_container {
+    height: auto; /* Flexible height */
+    width: 100%; /* Responsive width */
+    padding: 2rem 0;
+    position: relative;
+}
+
+/* Default style for slides */
+.swiper-slide {
+    width: 50%; /* Responsive width for slides */
+    height: 500px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+    opacity: 0.5; /* Default opacity for non-active slides */
+    filter: grayscale(100%) brightness(0.8); /* Dull effect */
+}
+
+/* Active slide */
+.swiper-slide-active {
+    opacity: 1; /* Full opacity */
+    filter: none; /* Remove dull effect */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth transition */
+}
+
+/* Videos */
+.swiper-slide video {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+/* Custom navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    background: linear-gradient(135deg, #f39c12, #e74c3c); /* Gradient background */
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.5rem;
+    color: #fff; /* White arrow icon */
+    font-weight: bold;
+}
+
+/* Responsive styles for arrows */
+@media (max-width: 768px) {
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 3rem;
+        height: 3rem;
+        top: 80%;
+    }
+    .swiper_container{
+        height: 300px;
+    }
+    .swiper-slide{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper-button-next {
+        right: 10px;
+    }
+    .swiper-button-prev {
+        left: 10px;
+    }
+}
+
+/* Pagination dots */
+.swiper-pagination {
+    position: relative;
+    bottom: 1rem;
+    text-align: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: #f39c12;
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #e74c3c;
+}
+
+
+
+
+/* 
+  .container {
+    max-width: 1500px;
+    padding: 0rem 1rem;
+    margin: 0 auto;
+}
+
+.heading {
+    padding: 1rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.swiper_container {
+    height: 500px;
+    width: 70%;
+    padding: 2rem 0;
+    position: relative;
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+.swiper-slide {
+    width: 37rem;
+    height: 100px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+    opacity: 0.5;
+    filter: grayscale(100%) brightness(0.8);
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    filter: none; 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+}
+
+@media (max-width: 500px) {
+    .swiper_container {
+        height: 47rem;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        width: 28rem !important;
+        height: 36rem !important;
+    }
+}
+
+.swiper-slide img {
+    width: 37rem;
+    height: 42rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: linear-gradient(135deg, #f39c12, #e74c3c);   width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.swiper-button-next {
+    right: 60px;
+}
+
+.swiper-button-prev {
+    left: 60px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 990px) {
+    .swiper-button-next {
+        right: -30px;
+    }
+
+    .swiper-button-prev {
+        left: -30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .swiper-button-next {
+        right: -20px;
+    }
+
+    .swiper-button-prev {
+        left: -20px;
+    }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background: #f39c12;
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background: #e74c3c;
+} */

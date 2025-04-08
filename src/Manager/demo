@@ -1,0 +1,46 @@
+// const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const userid = localStorage.getItem("userid");
+    //     if (!userid) {
+    //         toast.error('Please log in to create a booking');
+    //         return;
+    //     }
+    //
+    //     try {
+    //         // Create start and end date objects
+    //         const [startDate] = formData.start_date.split('T');
+    //         const [endDate] = formData.end_date.split('T');
+    //
+    //         const bookingData = {
+    //             ...formData,
+    //             userid,
+    //             // Combine date and time for start_date
+    //             start_date: `${startDate}T${formData.start_time}:00.000Z`,
+    //             // Combine date and time for end_date
+    //             end_date: `${endDate}T${formData.end_time}:00.000Z`
+    //         };
+    //
+    //         await axios.post(`${ip}/api/turf-admin/book`, bookingData);
+    //         toast.success('Booking created successfully');
+    //         setShowBookingForm(false);
+    //         fetchBookings();
+    //         setFormData({
+    //             name: '',
+    //             mobile_no: '',
+    //             start_date: new Date().toISOString(),
+    //             start_time: getCurrentTime(),
+    //             end_date: new Date().toISOString(),
+    //             end_time: getCurrentTime(),
+    //             amount: '',
+    //             payment_method: 'Card',
+    //             payment_status: 'Pending',
+    //             advance: '0',
+    //             userid: userid,
+    //             plan_id: ''
+    //         });
+    //     } catch (error) {
+    //         const errorMessage = error.response?.data?.message || 'Failed to create booking';
+    //         toast.error(errorMessage);
+    //         console.error('Error creating booking:', error);
+    //     }
+    // };
